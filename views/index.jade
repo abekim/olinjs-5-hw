@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  img(src="#{source}", style="float:left; margin: 25px 10px 0px")
+  h1 Hello #{user_name}!
+  h2 Welcome to Shitty MyFaceBookSpace!
+  div(id="bgcolor", style="display:none") #{color}
+  div(id="textsize", style="display:none") #{size}
+  div(id="userId", style="display:none") #{userId}
+
+  | Background: 
+  select(name="bgcolor", id="color-select")
+    option(value="white") White
+    option(value="blue") Blue
+    option(value="red") Red
+    option(value="green") Green
+    option(value="yellow") Yellow
+  br
+  | Text-Size:
+  select(name="textsize")
+    option(value="x-small") Tiny
+    option(value="small") Small
+    option(value="medium") Medium
+    option(value="large") Large
+    option(value="x-large") Huge
