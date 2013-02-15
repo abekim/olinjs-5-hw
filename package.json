@@ -9,7 +9,7 @@
     "express": "3.x",
     "jade": "*",
     "mongoose": "3.x",
-    "fb": "0.1.0"
+    "facebook-node-sdk": "0.1.0"
   },
     "engines": {
     "node": "0.8.14 ",
